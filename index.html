@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Random Choice Picker</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Random Choice Picker</h1>
+
+    <form action="pick" method="post" class="form">
+      <label for="choices">Enter choices (one per line, or comma/semicolon separated):</label>
+      <textarea id="choices" name="choices" rows="8" placeholder="Apple\nBanana\nOrange"></textarea>
+
+      <label for="count">Number of picks (1 = single):</label>
+      <input id="count" name="count" type="number" min="1" value="1" />
+
+      <div class="hint">Empty lines are ignored.</div>
+
+      <button type="submit">Pick Random</button>
+    </form>
+
+    <footer class="footer">Built with HTML + CSS + Java Servlets</footer>
+  </div>
+</body>
+</html>
